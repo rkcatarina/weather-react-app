@@ -6,17 +6,11 @@ export default function Sources() {
     <div className="Sources">
       <p>
         This project was coded by Catarina Redshaw Kranich and is{" "}
-        <a href="https://github.com/rkcatarina/my-weather-app">
+        <a href="https://github.com/rkcatarina/weather-react-app">
           open-sourced on GitHub
         </a>{" "}
         and hosted by{" "}
-        <a
-          href="https://zealous-hawking-98f05e.netlify.app
-
-"
-        >
-          Netlify
-        </a>
+        <a href="https://vigilant-mcnulty-3fc808.netlify.app/">Netlify</a>
       </p>
     </div>
   );

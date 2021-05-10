@@ -3,6 +3,7 @@ import Form from "./Form";
 import Numbers from "./Numbers";
 import CurrentDay from "./CurrentDay";
 import CurrentCity from "./CurrentCity";
+import Sources from "./Sources";
 
 export default function App() {
   return (
@@ -72,14 +73,7 @@ export default function App() {
 
           <br />
           <hr />
-          <p>
-            This project was coded by Catarina Redshaw Kranich and is{" "}
-            <a href="https://github.com/rkcatarina/my-weather-app">
-              open-sourced on GitHub
-            </a>{" "}
-            and hosted by{" "}
-            <a href="https://zealous-hawking-98f05e.netlify.app">Netlify</a>
-          </p>
+          <Sources/>
         </div>
         <script src="src/script.js"></script>
       </body>
