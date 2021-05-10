@@ -1,0 +1,32 @@
+.Form .search {
+  background-color: #0a043c;
+}
+
+.Form .form-control {
+  display: inline;
+  width: 250px;
+}
+
+.Form .search-button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: #822659;
+  margin-left: 5px;
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+}
+
+.Form .current-button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: #a3ddcb;
+  margin-left: 28px;
+  width: 100px;
+  border-radius: 6px;
+  border: none;
+  padding: 10px;
+}

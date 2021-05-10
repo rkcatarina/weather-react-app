@@ -1,38 +1,79 @@
-.App {
+body {
+  background-image: linear-gradient(to top, #a8edea 0%, #fff 100%);
+}
+
+h1 {
+  color: #822659;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+ul {
+  list-style-type: none;
+}
+
+p {
+  color: #822659;
   text-align: center;
+  font-family: monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.currCity {
+  color: #0a043c;
+  border-color: black;
+  font-size: 32px;
+  font-weight: 700;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#currTemp {
+  color: #0a043c;
+  border-color: black;
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.celsius:hover {
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.fahrenheit:hover {
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.preview {
+  font-size: 20px;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.small {
+  color: #03506f;
+  border-color: #a3ddcb;
+  background-color: #a3ddcb;
+  margin-top: 10px;
+}
+.day,
+.temp {
+  font-size: 28px;
+}
+
+.day {
+  color: #0a043c;
+}
+
+.date {
+  font-size: 24px;
+}
+
+.on {
+  color: #03506f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.on:hover {
+  text-decoration: none;
+}
+
+.weather-min {
+  opacity: 0.5;
 }

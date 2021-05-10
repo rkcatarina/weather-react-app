@@ -1,25 +1,88 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Form from "./Form";
+import Numbers from "./Numbers";
+import CurrentDay from "./CurrentDay";
+import CurrentCity from "./CurrentCity";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SheCodes</title>
+        <script
+          src="https://kit.fontawesome.com/57cd5b8ee8.js"
+          crossorigin="anonymous"
+        ></script>
+        <link
+          rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="src/style.css" />
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      </head>
+      <body>
+        <div className="container">
+          <header>
+            <h1>Weather App</h1>
+          </header>
+          <hr />
+          <div className="row">
+            <div className="col-8">
+              <div className="card search">
+                <div className="card-body">
+                  <Form />
+                </div>
+              </div>
+            </div>
+            <div className="col-4">
+              <CurrentCity />
+            </div>
+          </div>
+          <br />
+          <div className="row">
+            <div className="col-sm-8">
+              <div className="card">
+                <div className="card-body">
+                  <Numbers />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-sm-2">
+              <CurrentDay />
+            </div>
+            <div className="col-sm-2 emoji">
+              <img
+                src="http://openweathermap.org/img/wn/10d@2x.png"
+                alt="Clear"
+                id="icon"
+                width="120"
+                class="float-left"
+              />
+            </div>
+          </div>
+          <br />
+          <hr />
+          <br />
+          <div className="weather-forecast" id="weather-forecast"></div>
+
+          <br />
+          <hr />
+          <p>
+            This project was coded by Catarina Redshaw Kranich and is{" "}
+            <a href="https://github.com/rkcatarina/my-weather-app">
+              open-sourced on GitHub
+            </a>{" "}
+            and hosted by{" "}
+            <a href="https://zealous-hawking-98f05e.netlify.app">Netlify</a>
+          </p>
+        </div>
+        <script src="src/script.js"></script>
+      </body>
     </div>
   );
 }
-
-export default App;

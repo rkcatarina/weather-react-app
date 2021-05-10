@@ -1,0 +1,26 @@
+.units {
+  position: relative;
+  top: -10px;
+}
+
+.currCity {
+  color: #0a043c;
+  border-color: black;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#currTemp {
+  color: #0a043c;
+  border-color: black;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.celsius:hover {
+  cursor: pointer;
+}
+
+.fahrenheit:hover {
+  cursor: pointer;
+}
